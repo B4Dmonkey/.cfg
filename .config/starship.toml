@@ -1,0 +1,39 @@
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$fill\
+$nodejs\
+$python\
+$cmd_duration\
+$jobs\
+$time\
+$line_break\
+$character
+
+"""
+
+[fill]
+symbol = " "
+
+[git_branch]
+format ="[$symbol$branch(:$remote_branch)]($style) "
+
+[git_status]
+conflicted = "%"
+
+[time]
+disabled = false
+format = 'at [$time]($style) '
+time_format = "%R %P"
+use_12hr = true
+
+[nodejs]
+format ="[$symbol($version )]($style)"
+
+[directory]
+home_symbol = ""
+truncation_length = 2
+truncation_symbol = ".../"

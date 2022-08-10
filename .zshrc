@@ -75,6 +75,9 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+#Starship Commmand Prompt
+eval "$(starship init zsh)"
+
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
