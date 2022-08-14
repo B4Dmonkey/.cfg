@@ -19,10 +19,20 @@ $character
 symbol = " "
 
 [git_branch]
-format ="[$symbol$branch(:$remote_branch)]($style) "
+format ="[[$symbol](bold green)$branch(:$remote_branch)]($style) "
 
 [git_status]
-conflicted = "%"
+style = "bold white"
+conflicted = "[⚑](bold red)"
+ahead = "[⇡](bold cyan)"
+behind = "[⇣](bold red)"
+diverged = "[⚡︎](bold purlple)"
+untracked = "[?](bold red)"
+stashed = '[\$](bold yellow)'
+modified= "[!](bold yellow)"
+staged = "[+](bold green)"
+renamed = "[»](bold white)"
+deleted = "[✘](bold red)"
 
 [time]
 disabled = false
